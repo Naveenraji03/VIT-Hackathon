@@ -6,7 +6,7 @@ For V1, FailForge targets an **Enterprise Policy Assistant** RAG system operatin
 
 ---
 
-## 🚀 Key Features & End-to-End Loop
+## Key Features & End-to-End Loop
 
 FailForge executes a complete autonomous testing loop:
 
@@ -23,7 +23,7 @@ TARGET RAG → TEST GENERATION → EXECUTION → STRUCTURAL EVALUATION → FAILU
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 - **Frontend**: React + Vite + TypeScript + Tailwind CSS
 - **Backend**: Python + FastAPI + Uvicorn
@@ -33,7 +33,7 @@ TARGET RAG → TEST GENERATION → EXECUTION → STRUCTURAL EVALUATION → FAILU
 
 ---
 
-## 🛠️ Local Setup Instructions
+## Local Setup Instructions
 
 ### Prerequisites
 - **Python 3.10+**
@@ -93,7 +93,7 @@ Open your browser at `http://localhost:3000`.
 
 ---
 
-## 🎬 1-Click Demo Mode
+## 1-Click Demo Mode
 
 For hackathon judges and quick testing:
 1. Open `http://localhost:3000`.
@@ -102,7 +102,7 @@ For hackathon judges and quick testing:
 
 ---
 
-## 📊 Reliability Score Calculation
+## Reliability Score Calculation
 
 $$ \text{Reliability \%} = \left[ \frac{\text{Passed Tests} + 0.5 \times \text{Warnings}}{\text{Total Executed Tests}} \right] \times 100 $$
 
@@ -112,19 +112,19 @@ $$ \text{Reliability \%} = \left[ \frac{\text{Passed Tests} + 0.5 \times \text{W
 
 ---
 
-## 🔮 What is Implemented vs V2 Roadmap
+## What is Implemented vs V2 Roadmap
 
 ### V1 Implemented (MVP)
-- ✅ Replaceable AI Model Provider abstraction layer (`AIProvider` / `GeminiProvider`).
-- ✅ Target RAG system with 10 synthetic corporate policy documents.
-- ✅ Real test generator across 6 red-teaming categories.
-- ✅ Failure Evaluator with structured JSON output & trigger detection.
-- ✅ Adaptive Test Generator producing targeted mutation variants.
-- ✅ Failure Clustering engine grouping related failure modes.
-- ✅ Interactive React Dashboard (Target Setup, Test Run Progress, Failure Map, Failure Detail Modal, Reliability Report).
-- ✅ Automated pytest suite for backend APIs and vector retrieval.
+- Replaceable AI Model Provider abstraction layer (`AIProvider` / `GeminiProvider`).
+- Target RAG system with 10 synthetic corporate policy documents.
+- Real test generator across 6 red-teaming categories.
+- Failure Evaluator with structured JSON output & trigger detection.
+- Adaptive Test Generator producing targeted mutation variants.
+- Failure Clustering engine grouping related failure modes.
+- Interactive React Dashboard (Target Setup, Test Run Progress, Failure Map, Failure Detail Modal, Reliability Report).
+- Automated pytest suite for backend APIs and vector retrieval.
 
 ### V2 Roadmap
-- 🔮 `LocalModelProvider` integration for local open-source LLMs (Qwen/Llama) via Ollama/vLLM.
-- 🔮 Multi-target RAG benchmarking & historical trend comparison.
-- 🔮 Automated policy document patch generator recommendation engine.
+- `LocalModelProvider` integration for local open-source LLMs (Qwen/Llama) via Ollama/vLLM.
+- Multi-target RAG benchmarking & historical trend comparison.
+- Automated policy document patch generator recommendation engine.
