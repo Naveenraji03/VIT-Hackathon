@@ -158,7 +158,7 @@ export function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
-      {/* Minimal Header Bar */}
+      {/* Professional Clean Header Bar */}
       <header className="border-b border-slate-200 bg-white sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
           <div className="flex items-center space-x-3">
@@ -166,10 +166,10 @@ export function App() {
               <Shield className="w-4 h-4 text-white" />
             </div>
             <div>
-              <h1 className="text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                FAILFORGE <span className="text-[10px] px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono font-semibold border border-slate-200">V1</span>
+              <h1 className="text-base font-bold text-slate-900 tracking-tight">
+                FAILFORGE
               </h1>
-              <p className="text-[11px] text-slate-500">Autonomous AI Reliability Testing</p>
+              <p className="text-[11px] text-slate-500 font-medium">Autonomous AI Reliability Platform</p>
             </div>
           </div>
 
@@ -180,17 +180,17 @@ export function App() {
               className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs flex items-center gap-2 transition-colors disabled:opacity-50"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              {loadingDemo ? "RUNNING DEMO..." : "DEMO MODE (1-CLICK RUN)"}
+              {loadingDemo ? "RUNNING FULL AUDIT..." : "DEMO MODE (1-CLICK RUN)"}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Minimal Navigation Tabs */}
+      {/* Navigation Tabs */}
       <nav className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 flex space-x-2">
           {[
-            { id: 'SETUP', label: 'Target Setup', icon: Cpu },
+            { id: 'SETUP', label: 'Target Setup & Sandbox', icon: Cpu },
             { id: 'RUN', label: 'Test Run', icon: Play },
             { id: 'MAP', label: `Failure Map (${clusters.length})`, icon: Layers },
             { id: 'REPORT', label: 'Reliability Report', icon: FileCheck },
@@ -235,6 +235,7 @@ export function App() {
             documents={documents}
             apiHealth={apiHealth}
             onStartTestRun={handleStartTestRun}
+            onSelectFailure={handleSelectFailure}
             isRunning={isRunning}
           />
         )}
@@ -267,9 +268,9 @@ export function App() {
         />
       )}
 
-      {/* Footer */}
+      {/* Minimal Footer */}
       <footer className="border-t border-slate-200 bg-white py-3 text-center text-xs text-slate-500">
-        FailForge V1 • Model: {apiHealth?.gemini_model || "Gemini"}
+        FailForge Autonomous AI Reliability & Vulnerability Testing
       </footer>
     </div>
   );

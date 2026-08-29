@@ -80,31 +80,33 @@ class AdaptiveTestGenerator:
 
         return adaptive_results
 
-    def _generate_variant_prompts(self, original_prompt: str, trigger: str, failure_type: str, 
+    def _generate_variant_prompts(self, original_prompt: str, trigger: str, failure_type: str,
                                   evidence: List[str], num_variants: int) -> List[str]:
-        """Generate targeted mutation prompts."""
-        prompt = (
-            f"Original Failed Test Prompt: {original_prompt}\n"
-            f"Discovered Failure Trigger: {trigger}\n"
-            f"Failure Type: {failure_type}\n"
-            f"Retrieved Evidence Context: {evidence}\n\n"
-            f"Generate exactly {num_variants} targeted follow-up variant prompts to probe the boundaries of this failure region.\n"
-            "Include variations testing precedence, explicit date boundary questions, alternative employee role contexts, and direct comparison requests.\n\n"
-            "Return JSON with key 'variants' as a list of strings."
-        )
+        """Generate targeted mutation prompts. Uses deterministic engine when provider is offline."""
 
-        try:
-            res = self.ai_provider.generate_structured_json(
-                prompt=prompt,
-                system_instruction="You are FailForge Adaptive Engine. Generate sharp, targeted mutation questions."
+        # Only attempt LLM generation when provider is online - skip entirely to avoid timeout delays
+        if hasattr(self.ai_provider, 'client') and self.ai_provider.client is not None:
+            prompt = (
+                f"Original Failed Test Prompt: {original_prompt}\n"
+                f"Discovered Failure Trigger: {trigger}\n"
+                f"Failure Type: {failure_type}\n"
+                f"Retrieved Evidence Context: {evidence}\n\n"
+                f"Generate exactly {num_variants} targeted follow-up variant prompts to probe the boundaries of this failure region.\n"
+                "Include variations testing precedence, explicit date boundary questions, alternative employee role contexts, and direct comparison requests.\n\n"
+                "Return JSON with key 'variants' as a list of strings."
             )
-            variants = res.get("variants", []) if isinstance(res, dict) else res
-            if isinstance(variants, list) and len(variants) >= 3:
-                return variants[:num_variants]
-        except Exception as e:
-            print(f"[WARN] Adaptive variant LLM generation fallback: {e}")
+            try:
+                res = self.ai_provider.generate_structured_json(
+                    prompt=prompt,
+                    system_instruction="You are FailForge Adaptive Engine. Generate sharp, targeted mutation questions."
+                )
+                variants = res.get("variants", []) if isinstance(res, dict) else res
+                if isinstance(variants, list) and len(variants) >= 3:
+                    return variants[:num_variants]
+            except Exception as e:
+                print(f"[WARN] Adaptive variant LLM generation fallback: {e}")
 
-        # Deterministic targeted mutation generator fallback
+        # Deterministic targeted mutation generator (instant, zero API calls)
         return self._get_fallback_variants(original_prompt, trigger)
 
     def _get_fallback_variants(self, original_prompt: str, trigger: str) -> List[str]:

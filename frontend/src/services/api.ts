@@ -52,6 +52,10 @@ export class ApiService {
     return this.request('/api/seed-demo', { method: 'POST' });
   }
 
+  static async executeScenario(scenarioKey: string): Promise<any> {
+    return this.request(`/api/demo/execute-scenario?scenario_key=${scenarioKey}`, { method: 'POST' });
+  }
+
   static async getTestResults(runId: string): Promise<TestResult[]> {
     return this.request(`/api/test-runs/${runId}/results`);
   }
