@@ -1,0 +1,14 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Corporate Travel Policy
+# Document ID: DOC-004
+# Category: Travel & Expenses
+# Version: 3.0
+# Effective Date: March 1, 2025
+
+SECTION 1: BUSINESS TRAVEL ELIGIBILITY & APPROVAL
+1.1 Approval: All business travel must be pre-approved by a Department Director at least 14 days prior to departure.
+1.2 Flight Booking: Domestic flights must be booked in Economy Class. Transatlantic/International flights over 8 hours permit Economy Plus or Premium Economy.
+
+SECTION 2: MEAL PER DIEM & ACCOMMODATION
+2.1 Daily Meal Per-Diem: The standard daily meal per-diem allowance for domestic business travel is $75 USD per day ($15 Breakfast, $25 Lunch, $35 Dinner). Receipts are NOT required for standard per-diem claims under $75.
+2.2 Accommodation Limits: Hotel bookings must not exceed $250 USD per night in standard tier cities, or $350 USD per night in designated high-cost metropolitan areas (New York, San Francisco, London, Tokyo).

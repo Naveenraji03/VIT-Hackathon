@@ -1,0 +1,14 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Information Security & Data Protection Policy
+# Document ID: DOC-008
+# Category: Security & IT
+# Version: 4.1
+# Effective Date: April 10, 2025
+
+SECTION 1: PASSWORD & ACCESS CONTROL
+1.1 Password Requirements: Corporate account passwords must be at least 14 characters in length, containing uppercase letters, numbers, and special symbols. Passwords expire every 90 days.
+1.2 Multi-Factor Authentication (MFA): MFA is compulsory for all external logins, single sign-on (SSO), and VPN connections.
+
+SECTION 2: AI TOOLS & DATA CLASSIFICATION
+2.1 Use of Public Generative AI Tools: Employees are prohibited from inputting Confidential or Proprietary company data into unapproved public AI tools.
+2.2 Data Classification: Data is classified into Public, Internal, Confidential, and Restricted. Financial records and employee PII are classified as Restricted.

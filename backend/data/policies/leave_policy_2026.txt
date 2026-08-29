@@ -1,0 +1,21 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Annual Leave & Absence Policy (2026 Updated Edition)
+# Document ID: DOC-003
+# Category: Leave & Absence
+# Version: 2026.1
+# Effective Date: January 1, 2026
+# Status: CURRENT ACTIVE POLICY (Supersedes 2025 Edition)
+
+SECTION 1: ANNUAL LEAVE ALLOCATION (2026)
+1.1 Total Entitlement: Effective January 1, 2026, all full-time employees are entitled to 20 business days of paid annual leave per calendar year (an increase from the previous 18 days in 2025).
+1.2 Accrual Rate: Leave accrues at the rate of 1.66 days per completed calendar month of service.
+1.3 Carryover Limit: Employees may carry over a maximum of 7 unused leave days into the subsequent calendar year. Any unused leave exceeding 7 days is forfeited on December 31.
+
+SECTION 2: SICK LEAVE & WELLNESS (2026)
+2.1 Sick Days: Employees receive 8 days of paid sick leave annually, plus 2 dedicated Mental Health/Wellness Days.
+2.2 Medical Certificate: A doctor's note is required for sick leave exceeding 3 consecutive working days.
+2.3 Parental Leave: Primary caregivers receive 16 weeks of fully paid parental leave. Secondary caregivers receive 4 weeks.
+
+SECTION 3: REQUEST & PRECEDENCE
+3.1 Approval: Requests must be submitted via the HR Portal.
+3.2 Policy Conflict Precedence Rule: In any conflict between prior policy documents (including Leave Policy 2025) and this 2026 Edition, the 2026 Edition (DOC-003) takes absolute precedence for all active staff as of Jan 1, 2026.

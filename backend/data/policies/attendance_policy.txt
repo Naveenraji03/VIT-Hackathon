@@ -1,0 +1,14 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Attendance & Working Hours Policy
+# Document ID: DOC-007
+# Category: Work Arrangements
+# Version: 1.2
+# Effective Date: January 1, 2025
+
+SECTION 1: WORKING HOURS & FLEXIBILITY
+1.1 Core Business Hours: All employees are expected to be available for meetings and collaborative work during core hours: 10:00 AM to 4:00 PM local time.
+1.2 Flexible Start/End: Bandwidth allows start times between 7:00 AM and 10:00 AM, provided standard 8-hour workday requirements are fulfilled.
+
+SECTION 2: ABSENCE NOTIFICATION
+2.1 Unexpected Absence: In case of illness or emergency, employees must notify their direct manager and HR by email or Slack no later than 2 hours prior to their planned start time (or by 8:00 AM standard time).
+2.2 Unexcused Absence: Three consecutive days of unexcused absence without communication is treated as voluntary resignation.

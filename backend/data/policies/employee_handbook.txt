@@ -1,0 +1,20 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Employee Handbook 2025-2026
+# Document ID: DOC-001
+# Category: General HR
+# Version: 2.1
+# Effective Date: January 1, 2025
+
+SECTION 1: CODE OF CONDUCT AND ETHICS
+1.1 Professionalism: All employees of Acme Global Enterprise are expected to maintain the highest standards of professional conduct, integrity, and respect toward colleagues, clients, and partners.
+1.2 Equal Opportunity: Acme Corporation is committed to providing equal employment opportunities to all individuals regardless of race, color, religion, gender, national origin, or disability.
+1.3 Conflict of Interest: Employees must avoid any activity, investment, or interest that conflicts or appears to conflict with the best interests of the company.
+
+SECTION 2: WORK ENVIRONMENT & HOURS
+2.1 Standard Office Hours: Standard operating hours are 9:00 AM to 5:00 PM local time, Monday through Friday.
+2.2 Dress Code: Business casual attire is required for office-based employees. Casual attire is permitted on Fridays unless client meetings are scheduled.
+2.3 Communication: Official business communications must be conducted via company-provided email and approved messaging platforms.
+
+SECTION 3: HR DIRECTORY & INQUIRIES
+3.1 HR Contact: For general HR inquiries, employees should email hr-help@acme-enterprise.com.
+3.2 Policy Hierarchy: Specific department or topic policies (such as Leave Policy, Travel Policy, InfoSec Policy) take precedence over general statements in this handbook.

@@ -1,0 +1,18 @@
+# Enterprise Policy Assistant - Synthetic Policy Dataset
+# Title: Expense & Reimbursement Guidelines
+# Document ID: DOC-005
+# Category: Travel & Expenses
+# Version: 2.4
+# Effective Date: June 15, 2025
+
+SECTION 1: REIMBURSEMENT PROCEDURES
+1.1 Expense Reports: All business expenses must be submitted within 30 days of occurrence with original itemized receipts.
+1.2 Processing Time: Approved claims will be reimbursed within 10 business days via direct deposit.
+
+SECTION 2: CLIENT ENTERTAINMENT & SPECIAL MEALS
+2.1 Client Meal Cap: Meals hosted for clients or business partners are reimbursed up to $120 USD per person inclusive of tax and gratuity. Detailed receipts showing itemized food/beverage and attendee list are mandatory.
+2.2 Alcohol Policy: Reasonable consumption of alcohol during client dinners is reimbursable if pre-approved by VP level.
+
+APPENDIX A: LEGACY MEAL ALLOWANCE SCHEDULE (Historical reference section)
+Note: For individual daily travel meal allowances, standard reimbursement rate is specified as $60 USD per day ($10 Breakfast, $20 Lunch, $30 Dinner) for legacy non-exempt staff.
+*(Note for FailForge testing: Notice the ambiguity between Travel Policy DOC-004 specifying $75/day vs Expense Policy DOC-005 Appendix A specifying $60/day).*
